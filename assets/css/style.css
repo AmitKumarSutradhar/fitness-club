@@ -1,0 +1,33 @@
+:root{
+    --color-red: #E6533C; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.text-center{
+    text-align: center;
+}
+ 
+
+/* Header Part  */
+.logo-text{
+    color: var(--color-red);
+}
+nav ul{
+    list-style-type: none;
+}
