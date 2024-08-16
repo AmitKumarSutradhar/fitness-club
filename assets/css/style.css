@@ -1,10 +1,16 @@
 :root{
     --color-red: #E6533C; 
+    --color-white: #ffffff;
+    --color-dark: #000000;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    color:  var(--color-white);
+    background-color:  var(--color-dark);
 }
 .container{
     width: 80%;
@@ -13,14 +19,28 @@
 a{
     text-decoration: none;
 }
+button{
+    color: var(--color-white);
+    background-color: var(--color-red);
+    border: 0;
+    border-radius: 20px;
+    padding: 7px 15px;
+}
 .flex{
     display: flex;
 }
 .justify-content-between{
     justify-content: space-between;
 }
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 .text-center{
     text-align: center;
+}
+img{
+    width: 100%;
 }
  
 
@@ -30,4 +50,30 @@ a{
 }
 nav ul{
     list-style-type: none;
+}
+
+/* Change Habit Section */
+#change-habit{
+    padding: 100px 0;
+}
+#change-habit .card img{
+    border-radius: 50%;
+}
+
+/* Meet our team */
+/*#meet-our-team{*/
+/*    padding: 100px 0;*/
+/*}*/
+#change-habit .card{
+    position: relative;
+}
+#change-habit .card .card-content{
+    position: absolute;
+    top: 0;
+}
+
+
+/* Footer */
+footer{
+
 }
