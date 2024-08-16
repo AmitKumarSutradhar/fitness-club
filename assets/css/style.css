@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root{
     --color-red: #E6533C; 
     --color-white: #ffffff;
-    --color-dark: #000000;
+    --color-black: #000000;
+    --color-dark: #191919;
+    --color-gray: #646464;
 }
 *{
     margin: 0;
@@ -10,7 +14,8 @@
 }
 body{
     color:  var(--color-white);
-    background-color:  var(--color-dark);
+    background-color:  var(--color-black);
+    font-family: "Inter", sans-serif;
 }
 .container{
     width: 80%;
@@ -22,15 +27,23 @@ a{
 button{
     color: var(--color-white);
     background-color: var(--color-red);
-    border: 0;
-    border-radius: 20px;
-    padding: 7px 15px;
+    border: 2px solid var(--color-red);
+    border-radius: 42px;
+    padding: 10px 40px;
+    font-size: 18px;
+}
+.btn-secondary{
+    background-color: transparent;
+    border: 2px solid var(--color-white);
 }
 .flex{
     display: flex;
 }
 .justify-content-between{
     justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
 }
 .grid{
     display: grid;
@@ -39,18 +52,81 @@ button{
 .text-center{
     text-align: center;
 }
+.col-6{
+    width: 50%;
+}
+.section-title{
+    color: var(--color-white);
+    font-size: 48px;
+}
+.section-sub-title{
+    color: var(--color-gray);
+    font-size: 14px;
+    line-height: 24px;
+}
 img{
     width: 100%;
+    object-fit: cover;
 }
  
 
-/* Header Part  */
+/* Header Section CSS Start  */
+header{
+    padding-top: 57px;
+}
 .logo-text{
     color: var(--color-red);
+}
+nav{
+    border: 1px solid var(--color-gray);
+    border-radius: 46px;
+    padding: 10px 2px;
 }
 nav ul{
     list-style-type: none;
 }
+header .nav-item a{
+    color: var(--color-white);
+    padding: 10px 20px;
+}
+header .nav-item a.active{
+    background-color: var(--color-red);
+    border-radius: 46px;
+}
+/* Header Section CSS End  */
+
+
+/* Hero Section CSS Start  */
+.hero-content h2{
+    font-size: 78px;
+}
+.hero-content p{
+    margin: 15px 0;
+}
+.hero-right-content{
+    position: relative;
+}
+.hero-right-img{
+    width: 350px;
+}
+.work-out-video{
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    border-radius: 12px;
+    background-color: var(--color-gray);
+    padding: 17px 24px;
+}
+.work-out-video{
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    border-radius: 12px;
+    background-color: #242424;
+    padding: 17px 24px;
+}
+/* Hero Section CSS End  */
+
 
 /* Change Habit Section */
 #change-habit{
@@ -58,6 +134,11 @@ nav ul{
 }
 #change-habit .card img{
     border-radius: 50%;
+}
+/* Run an extra mile */
+#extra-mile .container{
+    background-color: var(--color-gray);
+    border-radius: 18px;
 }
 
 /* Meet our team */
@@ -75,5 +156,5 @@ nav ul{
 
 /* Footer */
 footer{
-
+    color: var(--color-dark);
 }
