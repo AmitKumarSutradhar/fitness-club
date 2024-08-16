@@ -24,6 +24,11 @@ body{
 a{
     text-decoration: none;
 }
+p{
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-gray);
+}
 button{
     color: var(--color-white);
     background-color: var(--color-red);
@@ -51,6 +56,9 @@ button{
 }
 .text-center{
     text-align: center;
+}
+.col-4{
+    width: 25%;
 }
 .col-6{
     width: 50%;
@@ -132,19 +140,21 @@ header .nav-item a.active{
 #change-habit{
     padding: 100px 0;
 }
+#change-habit .cards{
+    gap: 40px;
+}
 #change-habit .card img{
     border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin: 30px 0;
 }
+
 /* Run an extra mile */
 #extra-mile .container{
     background-color: var(--color-gray);
     border-radius: 18px;
 }
-
-/* Meet our team */
-/*#meet-our-team{*/
-/*    padding: 100px 0;*/
-/*}*/
 #change-habit .card{
     position: relative;
 }
@@ -153,6 +163,35 @@ header .nav-item a.active{
     top: 0;
 }
 
+
+/* Meet our team */
+#meet-our-team{
+    padding: 100px 0;
+}
+#meet-our-team .container{
+
+}
+#meet-our-team .cards{
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--color-gray);
+    border-radius: 18px;
+}
+#meet-our-team .card{
+    position: relative;
+}
+#meet-our-team .card .team-member-img{
+    position: relative;
+}
+
+#meet-our-team .card img{
+    height: 300px;
+}
+#meet-our-team .card .card-content{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
 
 /* Footer */
 footer{
