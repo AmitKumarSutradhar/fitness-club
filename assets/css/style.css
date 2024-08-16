@@ -57,10 +57,7 @@ button{
 .text-center{
     text-align: center;
 }
-.col-4{
-    width: 25%;
-}
-.col-6{
+.w-50{
     width: 50%;
 }
 .section-title{
@@ -100,6 +97,9 @@ header .nav-item a{
 header .nav-item a.active{
     background-color: var(--color-red);
     border-radius: 46px;
+}
+.hem-menu{
+    display: none;
 }
 /* Header Section CSS End  */
 
@@ -196,4 +196,47 @@ header .nav-item a.active{
 /* Footer */
 footer{
     color: var(--color-dark);
+}
+.footer-bottom{
+    padding: 35px 0;
+}
+.footer-nav h4 {
+    color: var(--color-white);
+    font-size: 23px;
+}
+.footer-nav ul li a {
+    color: var(--color-gray);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 576px) {
+    .hero{
+        flex-direction: column;
+    }
+    .w-50{
+        width: 100%;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    nav{
+        display: none;
+    }
+
+    /* Header */
+    .hem-menu{
+        display: block;
+        width: 24px;
+    }
+
+    /* Footer */
+    .footer-nav{
+        flex-direction: column;
+    }
+
 }
