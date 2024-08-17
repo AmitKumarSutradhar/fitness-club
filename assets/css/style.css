@@ -5,7 +5,7 @@
     --color-white: #ffffff;
     --color-black: #000000;
     --color-dark: #191919;
-    --color-gray: #646464;
+    --color-gray: #222222;
 }
 *{
     margin: 0;
@@ -21,13 +21,17 @@ body{
     width: 80%;
     margin: auto;
 }
+h4 {
+    font-size: 28px;
+    color: var(--color-white);
+}
 a{
     text-decoration: none;
 }
 p{
     font-size: 14px;
     line-height: 24px;
-    color: var(--color-gray);
+    color: #8d8d8d;
 }
 button{
     color: var(--color-white);
@@ -41,18 +45,50 @@ button{
     background-color: transparent;
     border: 2px solid var(--color-white);
 }
+input{
+    background-color: #383838;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 0px;
+    padding: 12px 12px;
+    width: 100%;
+}
+select{
+    background-color: #383838;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 0px;
+    padding: 12px 12px;
+    color: #8d8d8d;
+    width: 100%;
+}
+table, th, td{
+    color: #8d8d8d;
+    font-size: 14px;
+    border: 1px solid #8d8d8d;
+    border-collapse: collapse;
+    text-align: center;
+}
+th,td{
+    padding: 8px;
+}
+
+/* Reusable CSS */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 .flex{
     display: flex;
 }
 .justify-content-between{
     justify-content: space-between;
 }
+.justify-content-center{
+    justify-content: center;
+}
 .align-items-center{
     align-items: center;
-}
-.grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
 }
 .text-center{
     text-align: center;
@@ -64,10 +100,8 @@ button{
     color: var(--color-white);
     font-size: 48px;
 }
-.section-sub-title{
-    color: var(--color-gray);
-    font-size: 14px;
-    line-height: 24px;
+.mx-auto{
+    margin: auto;
 }
 img{
     width: 100%;
@@ -164,6 +198,28 @@ header .nav-item a.active{
 }
 
 
+/* BMI Calculator Start */
+#bmi-calculator-top{
+    background-color: var(--color-black);
+}
+#bmi-calculator-top .container{
+    padding: 50px 0;
+}
+#bmi-calculator{
+    background-color: var(--color-gray);
+}
+#bmi-calculator .container{
+    padding: 50px 0;
+}
+.calculator-chart{
+    margin: 0 auto;
+}
+#bmi-calculator .input-group{
+    gap: 12px;
+}
+/* BMI Calculator End */
+
+
 /* Meet our team */
 #meet-our-team{
     padding: 100px 0;
@@ -199,10 +255,6 @@ footer{
 }
 .footer-bottom{
     padding: 35px 0;
-}
-.footer-nav h4 {
-    color: var(--color-white);
-    font-size: 23px;
 }
 .footer-nav ul li a {
     color: var(--color-gray);
